@@ -1,0 +1,24 @@
+create database Banking;
+use Banking;
+create table banking_application(id int,name varchar(20),age int);
+select *From banking_application;
+insert into banking_application values(1,"Vineeth",24);
+select *from banking_application;
+create table bankaccount(id int,name varchar(20),age int,city varchar(20));
+insert into bankaccount values(1,"Poorrnisha",19,"Nagercoil"),(2,"Shakeel",20,"Chennai"),(3,"Swithin",18,"Coimbatore");
+select *from bankaccount;
+update bankaccount set name ='Ananya' where id=3;
+SET SQL_SAFE_UPDATES = 0;
+SET SQL_SAFE_UPDATES = 1;
+delete from bankaccount where id=3;
+alter table bankaccount add state varchar(10);
+alter table bankaccount drop column state;
+insert into bankaccount values(5,"Ansen",16,"Banglore"),(6,"Ashiq",22,"kerala"),(4,"Agalya",24,"Selam");
+create table user(id int, name varchar(20), amount int);
+insert into user values(1, 'akshaya', 3000), (3, 'Lakshmi', 1000), (20, 'Sanjana', 250), (15, 'Vijay', 450), (18, 'Poorni', 450);
+select id,name,amount from user order by amount desc limit 1;
+create database crude_;
+use crude_;
+create table crude_pro(id int, name varchar(20), age int);
+select * from crude_pro;
+
